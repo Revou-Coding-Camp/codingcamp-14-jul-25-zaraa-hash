@@ -1,0 +1,28 @@
+/*Ini CSS External*/
+
+.main-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.Logo-company{
+    border: 1px solid;
+    height: 50px;
+    width: 50px;
+    background-image: url(https://picsum.photos/200);
+    background-size: cover;
+    border-radius: 50%;
+}
+
+nav {
+    display: flex
+;
+}
+nav >a {
+    border: 1px solid;
+    color: black;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 4px;
+}
