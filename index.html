@@ -10,40 +10,36 @@
 
 <body>
     <!-- Header & Navigation -->
-    <header class="main-header">
+    <header class="flex justify-between items-center padding-(8px)">
         <!-- Logo Icon -->
         <div class="logo-company"></div>
 
     <nav>
-        <a href="#" class="no-border-radius-right">Home</a> 
+        <a href="#home-section" class="no-border-radius-right">Home</a> 
         <a href="#our-profile-section" class="no-border-radius">Our Profile</a>
         <a href="#message-us-section" class="no-border-radius-left">Message us</a>
     </nav>
 
-    <header>
+    </header>
 
     <hr/>
 
 
 
     <!-- Main Content -->
+     <section id="home-section"></section>
     <main>
         <header>
-            <h1> Your Trusted Travel Agent </h1>
+            <h1> Welcome to Our Website </h1>
 
-            <h4>Your Happiness is Our Happiness</h4>
+            <p>Your Happiness is Our Happiness</p>
         </header>
-
+        <div>
+            <p class="text-center"></p>
+            <div class="banner-image"></div>
+        </div>
       <section class="main-content">
-         <!--Banner Autoslide-->
-        <aside class="main-container">
-            <p> Banner Autoslide</p>
-        </aside>
-
-        <!--Form Contact Us-->
-        <aside class="main-container">
-            <p> Form Contact Us </p>
-        </aside>
+        
       </section>
 
        <!--Our Profile Section-->
@@ -60,20 +56,31 @@
 
        <!--Message Us Section-->
       <section id="message-us-section">
-        <header>
+        <form>
+             <header>
             <h2>Message Us</h2>
         </header>
+        <div class="flex flex-col items-center">
+            <label for="name" class="no-border-radius-2">Name:</label>
+            <input type="text" id="name" name="name" class="border rounded padding-2 no-border-radius-4 width-1/2"> 
+
+            <button onclick="validateform();" type="button"
+                class="background-blue-sea text-white py-2 px-4 rounded hover:background-blue-sea transition duration-300">Send Message</button>
+        </div>
+        </form>
+       
           
         <!--Content Message Us Profiles-->
-        <article class="message-us-content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
-        </article>
+       
       </section>
     </main>
 
     <!-- Footer -->
     <footer>
-        <p>Made by Zaraa2025</p>
+        <p>-ZaraaCompany-</p>
     </footer>
+
+    <!--Javascript External Link-->
+    <script src="js/script.js"></script>
 </body>
 </html>
